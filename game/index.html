@@ -4,31 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Rock, Paper, Scissors Game</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div id="game-container">
-        <div id="rules-popup">
-            <p>Basic Rule: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</p>
-            <button id="close-rules">Close</button>
-        </div>
 
-        <div id="score-container">
-            <div id="human-score">Human: 0</div>
-            <div id="computer-score">Computer: 0</div>
-        </div>
-
-        <div id="game-messages"></div>
-
-        <div id="options-container">
-            <button class="option" onclick="playRound('rock')">Rock</button>
-            <button class="option" onclick="playRound('paper')">Paper</button>
-            <button class="option" onclick="playRound('scissors')">Scissors</button>
-        </div>
-
-        <button id="rules-button" onclick="openRules()">Rules</button>
+<div class="game-container">
+    <div class="score">
+        <div class="computer-score">computer score</div>
+        <div class="your-score">your score</div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="options">
+        <button onclick="playGame('stone')">Stone</button>
+        <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissor')">Scissor</button>
+    </div>
+
+    <div class="result-message">
+        <p class="message"></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <div class="rules-section">
+        <button onclick="openRules()">Rules</button>
+        <div class="rules-popup">
+            <p>Rock beats scissor,scissors beat paper,and paper beats rock</p>
+            <br>
+            <p>Agree ahead of time whetheryou'll count off "rock,paper,scissors, shoot " or just "rock,paper,scissor."
+            </p>
+            <br>
+            <p>use rock,paper,scissor to settle minordecision or simply play to pass time</p>
+            <br>
+            <p>If bith players lay down the same hand,each palyers lays down another hand</p>
+
+
+            <button onclick="closeRules()">Close</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<div class="game-container">
+    <div class="score">
+        <div class="computer-score">computer score</div>
+        <div class="your-score">your score</div>
+    </div>
+
+    <div class="options">
+        <button onclick="playGame('stone')">Stone</button>
+        <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissor')">Scissor</button>
+    </div>
+
+    <div class="result-message">
+        <p class="message"></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <div class="rules-section">
+        <button onclick="openRules()">Rules</button>
+        <div class="rules-popup">
+            <p>Rock beats scissor,scissors beat paper,and paper beats rock</p>
+            <br>
+            <p>Agree ahead of time whetheryou'll count off "rock,paper,scissors, shoot " or just "rock,paper,scissor."
+            </p>
+            <br>
+            <p>use rock,paper,scissor to settle minordecision or simply play to pass time</p>
+            <br>
+            <p>If bith players lay down the same hand,each palyers lays down another hand</p>
+
+
+            <button onclick="closeRules()">Close</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
