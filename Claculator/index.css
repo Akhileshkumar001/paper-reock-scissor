@@ -1,0 +1,34 @@
+html,body{
+    height:100%;
+    width: 100%;
+}
+body{
+    background-color: dimgray;
+    color: white;
+}
+.Heading{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    width: 50px;
+    padding: 20px;
+    margin: 0 3px; 
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.row{
+    margin-top: 8px;
+}
+.row input{
+    width: 160px;
+    margin: 0;
+    padding: 6px 36px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
