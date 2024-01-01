@@ -94,7 +94,7 @@ function closeRules() {
 const optionButtons = document.querySelectorAll('.options button');
 optionButtons.forEach(button => {
     button.addEventListener('click', function () {
-        playGame(button.textContent.toLowerCase());
+        playGame(button.textContent.toLowerCase()); 
     });
 });
 

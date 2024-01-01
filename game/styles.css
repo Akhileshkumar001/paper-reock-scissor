@@ -61,7 +61,7 @@ button {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: #fff;
+    background-color: green;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
